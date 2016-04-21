@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LargestNumber {
+
+	public static void main(String[] args) {
+		int X,Y,Z;
+		System.out.println("Enter three number X,Y,Z");
+		Scanner input = new Scanner(System.in);
+		X = input.nextInt();
+   		Y = input.nextInt();
+   		Z = input.nextInt();
+     if(X>Y&&X>Z){
+    	 System.out.println(X +" is Largest");
+     }else if(Y>X&&Y>Z){
+    	 System.out.println(Y +"is Largest");
+     }
+     else {
+    	 System.out.println(Z+" is largest");
+     }
+  }
+}
