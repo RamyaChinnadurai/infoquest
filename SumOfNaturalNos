@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class SumOfNaturalNos {
+	public static void main(String[] args) {
+	  int num , i =1;
+		int sum =0;
+		System.out.println("Enter number of natural numbers");	
+        Scanner input = new Scanner(System.in);
+        num = input.nextInt();
+            while(i<= num){
+            	sum = sum + i;
+            	i++;
+         }
+            System.out.println("Sum of "+ num +" natural nos is " + sum);
+   }
+}
