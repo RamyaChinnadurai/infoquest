@@ -1,0 +1,18 @@
+import java.util.*;
+public class Fibonacci {
+	public static void main(String[] args) {
+		int count;
+		int f1=0,f2=1;
+		int temp;
+		System.out.println("Enter number of series to print");
+        Scanner input = new Scanner(System.in);
+        count = input.nextInt();
+        System.out.println("The Fibonacci series is\n "+f1+"\n "+f2);
+        for(int i=2;i<count;i++){
+        	temp= f1+ f2;
+        	f1=f2;
+        	f2=temp;
+        	System.out.println(" "+ temp);
+        }
+  	}
+}
