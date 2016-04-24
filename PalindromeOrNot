@@ -1,0 +1,21 @@
+import java.util.*;
+public class PalindromeOrNot {
+ public static void main(String[] args) {
+       int num;
+       int sum=0, temp ,r;
+       System.out.println("Enter the number");
+       Scanner input = new Scanner(System.in);
+       num = input.nextInt();
+       temp = num;
+       while(num>0){
+    	   r = num %10;
+    	   sum = (sum * 10)+ r;
+    	   num = num /10;
+       }
+       if(temp==sum){
+    	   System.out.println("Number is a Palindrome");
+       }else{
+    	   System.out.println("Number is not a palindrome");
+       }
+    }
+}
