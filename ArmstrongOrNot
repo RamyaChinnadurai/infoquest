@@ -1,0 +1,23 @@
+import java.util.*;
+public class  ArmstrongNo{
+  public static void main(String[] args) {
+		int number;
+		int counter=0;
+		int temp, a;
+		System.out.println("Enter a number");
+		Scanner input = new Scanner(System.in);
+		number = input.nextInt();
+		temp = number ;
+		while(number >0){
+			a=number % 10;
+			number = number / 10;
+			counter = counter +(a*a*a);
+		}
+		if( temp == counter){
+			System.out.println("Given number is a armstrong number");
+		}
+		else{
+			System.out.println("Given number is not a armstrong number");
+		}
+	}
+}
