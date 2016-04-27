@@ -1,0 +1,12 @@
+import java.util.*;
+class StringToInteger{
+  public static void main(String args[]){
+    int num;
+    String s;
+    System.out.println("Enter a value");
+    Scanner scan=new Scanner(System.in);
+    s=scan.next();
+    intoInt=Integer.parseInt(s);
+    System.out.println("This is an integer: "+ num);
+  }
+}
