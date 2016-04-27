@@ -1,0 +1,15 @@
+import java.util.*;
+public class ReverseDigit {
+	public static void main(String[] args) {
+		int num,res = 0;
+		System.out.println("Enter a number");
+		Scanner input = new Scanner(System.in);
+		num = input.nextInt();
+		while(num!=0){
+			res = res *10;
+			res = res + num %10;
+			num = num / 10;
+		}
+     System.out.println("The reverse of the number is "+ res);
+	}
+}
